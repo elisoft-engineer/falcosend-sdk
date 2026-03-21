@@ -25,6 +25,10 @@
   ],
   "author": "Elkana Maina <elisoft.engineer@gmail.com> (https://elkana.ellypad.com)",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elisoft-engineer/falcosend-sdk.git"
+  },
   "packageManager": "pnpm@10.30.0",
   "devDependencies": {
     "tsup": "^8.5.1",
