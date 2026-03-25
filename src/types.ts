@@ -11,6 +11,6 @@ export interface FalcoSendConfig {
 export interface SubmissionResponse {
   id: string;
   form_name: string;
-  created_at: string;
+  submitted_at: string;
   [key: string]: any;
 }
