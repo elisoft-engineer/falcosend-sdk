@@ -1,5 +1,3 @@
-<p align="center"><img src="./public/logo.png" width="200" alt="Falcosend Logo"></p>
-
 # falcosend-sdk
 
 ## Your forms, powered by a few lines of code.
@@ -25,7 +23,7 @@ const sdk = new FalcoSend({submissionKey: 'your_key'});
 
 const onSubmit = async (formData) => {
   const response = await sdk.submit({
-    form: 'contact_us',
+    form_name: 'Form Name', // 'Contact Form', 'Survey Form', ...
     data: formData
   });
 
