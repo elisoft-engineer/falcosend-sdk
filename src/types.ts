@@ -5,7 +5,7 @@ export interface SubmissionPayload {
 
 export interface FalcoSendConfig {
   submissionKey: string;
-  baseUrl?: string;
+  url?: string;
 }
 
 export interface SubmissionResponse {

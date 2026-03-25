@@ -2,11 +2,11 @@ import type { FalcoSendConfig, SubmissionPayload, SubmissionResponse } from './t
 
 export class FalcoSend {
   private submissionKey: string;
-  private baseUrl: string;
+  private url: string;
 
   constructor(config: FalcoSendConfig) {
     this.submissionKey = config.submissionKey;
-    this.baseUrl = config.baseUrl || "https://api.falcosend.com/api/v1/submissions/create/";
+    this.url = config.url || "https://api.falcosend.com/api/v1/submissions/create/";
   }
 
   /**
@@ -18,7 +18,7 @@ export class FalcoSend {
       ? JSON.stringify(payload.data) 
       : payload.data;
 
-    const response = await fetch(this.baseUrl, {
+    const response = await fetch(this.url, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
