@@ -1,6 +1,6 @@
 {
   "name": "falcosend-sdk",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A high-performance Node.js and TypeScript SDK for seamlessly integrating and sending notifications via the FalcoSend API.",
   "type": "module",
   "main": "./dist/index.cjs",
