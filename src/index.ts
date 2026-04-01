@@ -14,10 +14,6 @@ export class FalcoSend {
    * Automatically stringifies objects passed to the 'data' field.
    */
   async submit(payload: SubmissionPayload): Promise<SubmissionResponse> {
-    const formattedData = typeof payload.data === 'object' 
-      ? JSON.stringify(payload.data) 
-      : payload.data;
-
     const response = await fetch(this.url, {
       method: "POST",
       headers: {
@@ -27,7 +23,7 @@ export class FalcoSend {
       },
       body: JSON.stringify({
         form_name: payload.form_name,
-        data: formattedData,
+        data: payload.data,
       }),
     });
 
