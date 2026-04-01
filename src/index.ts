@@ -6,7 +6,7 @@ export class FalcoSend {
 
   constructor(config: FalcoSendConfig) {
     this.submissionKey = config.submissionKey;
-    this.url = config.url || "https://api.falcosend.com/api/v1/submissions/create/";
+    this.url = config.url || "https://api.falcosend.ellypad.com/api/v1/submissions/create/";
   }
 
   /**
